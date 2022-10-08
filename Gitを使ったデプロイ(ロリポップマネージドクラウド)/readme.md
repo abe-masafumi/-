@@ -156,7 +156,7 @@ git pull origin master
 
 > ロリポップの設定を見ながら入力する
 
-<img src="./connect.png">
+<img src="./img/connect.png">
 
 - workbenchの接続設定
 
@@ -164,7 +164,7 @@ git pull origin master
 
 > id_rsaを使用
 
-<img src="./workbench.png">
+<img src="./img/workbench.png">
 
 
 - データベースのimport
@@ -174,5 +174,5 @@ git pull origin master
 > Import from Self-Contained FileにエクスポートしたDBファイルを選択
 > Start Importでインポート（２回目くらいでいけた：反映されるのが遅い）
 
-<img src="/workbenchDBimport.png">
+<img src="./img/workbenchDBimport.png">
 
