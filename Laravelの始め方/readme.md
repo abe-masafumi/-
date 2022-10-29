@@ -18,6 +18,12 @@
 
 - [プロジェクトの作成](https://laravel.com/docs/9.x)
 
+## プロジェクトのディレクトリ構成
+
+<img src="./image/img004.png">
+
+## プロジェクトの環境設定
+
 - .envでDBと接続設定
 
 <img src="./image/img001.png">
@@ -26,5 +32,6 @@
 
 <img src="./image/img002.png">
 
+- 詳細設定
 
-
+<img src="./image/img003.png">
