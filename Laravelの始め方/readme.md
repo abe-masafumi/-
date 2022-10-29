@@ -35,3 +35,19 @@
 - 詳細設定
 
 <img src="./image/img003.png">
+
+- マイグレーションのとは
+
+<img src="./image/img005.png">
+
+- マイグレーションの生成
+
+<img src="./image/img006.png">
+
+```bush
+php artisan make:migration create_owners_table
+```
+
+```bush
+php artisan migrate
+```
