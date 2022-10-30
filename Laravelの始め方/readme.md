@@ -1,5 +1,9 @@
 # Laravelno始め方
 
+[ドキュメント](https://laravel.com/docs/9.x/migrations#generating-migrations)
+
+[ドキュメント](https://readouble.com/laravel/9.x/ja/installation.html)
+
 ## 開発環境 ローカル
 - Mac(PC)上に構築する　＝>MAMP
 
@@ -44,10 +48,12 @@
 
 <img src="./image/img006.png">
 
+"migrations/"の中にフォルダを作成
 ```bush
 php artisan make:migration create_owners_table
 ```
 
+接続しているDBにテーブルを生成
 ```bush
 php artisan migrate
 ```
