@@ -57,3 +57,19 @@ php artisan make:migration create_owners_table
 ```bush
 php artisan migrate
 ```
+
+
+## Docker環境で構築
+
+Docker Desktopのインストール
+[Download Docker Desktop](https://docs.docker.com/desktop/mac/apple-silicon/)
+
+Dockerがインストールできているか確認
+```
+docker -v
+
+docker compose -v
+```
+
+vscodeの拡張機能でDckerをインストール
+
