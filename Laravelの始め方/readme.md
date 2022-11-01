@@ -64,6 +64,8 @@ php artisan migrate
 Docker Desktopのインストール
 [Download Docker Desktop](https://docs.docker.com/desktop/mac/apple-silicon/)
 
+"Homebrew"でインストールしようとしたが、Docker　Desktopだげがインストールできるか不安だったのでwebからダウンロードした
+
 Dockerがインストールできているか確認
 ```
 docker -v
@@ -71,5 +73,25 @@ docker -v
 docker compose -v
 ```
 
-vscodeの拡張機能でDckerをインストール
+vscodeの拡張機能で"Dcker"をインストール
 
+## Docker Desktopの使い方
+
+[document](https://docs.docker.jp/)
+
+
+一度チュートリアルをやってみるといい
+
+## 手順
+
+ローカルでプロジェクトを作成
+
+
+
+
+
+コマンド
+
+```bush
+
+```
