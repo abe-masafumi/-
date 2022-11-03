@@ -120,6 +120,8 @@ php artisan sail:install
 プロジェクトの起動
 ./vendor/bin/sail up -d
 
+http://localhost/
+
 Sailのdocker-compose.ymlファイルをアプリケーションのルートに発行
 php artisan sail:install --devcontainer
 
