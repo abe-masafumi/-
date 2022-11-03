@@ -86,12 +86,31 @@ vscodeの拡張機能で"Dcker"をインストール
 
 ローカルでプロジェクトを作成
 
-
-
-
-
 コマンド
 
 ```bush
 
+```
+
+
+
+## sailでlaravelの環境構築
+
+https://qiita.com/goemontech/items/63c8de2a122a4bdb7967
+
+```bush
+プロジェクト立ち上げ
+curl -s "https://laravel.build/example-app?with=mysql" | bash
+
+プロジェクトに移動
+cd example-app
+
+プロジェクトの起動
+./vendor/bin/sail up -d
+
+sailのバージョン確認
+sail php --version
+
+プロジェクトの停止
+./vendor/bin/sail stop
 ```
