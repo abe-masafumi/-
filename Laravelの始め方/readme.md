@@ -105,12 +105,31 @@ curl -s "https://laravel.build/example-app?with=mysql" | bash
 プロジェクトに移動
 cd example-app
 
+Sail を既存のアプリケーションにインストールする
+composer require laravel/sail --dev
+
+＊ composer.jsonが更新される
+＊ composer.lockが更新される
+
+<!-- Sailのdocker-compose.ymlファイルをアプリケーションのルートに発行
+php artisan sail:install
+
+* docker-compose.yml
+* phpunit.xml -->
+
 プロジェクトの起動
 ./vendor/bin/sail up -d
 
-sailのバージョン確認
-sail php --version
+Sailのdocker-compose.ymlファイルをアプリケーションのルートに発行
+php artisan sail:install --devcontainer
+
+* "docker-compose.yml"の作成
+* "phpunit.xml"の作成
+* ".devcontainer/devcontainer.json"の作成
 
 プロジェクトの停止
 ./vendor/bin/sail stop
+
+sailのバージョン確認
+sail php --version
 ```
