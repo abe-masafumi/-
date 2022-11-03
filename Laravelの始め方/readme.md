@@ -96,7 +96,7 @@ vscodeの拡張機能で"Dcker"をインストール
 
 ## sailでlaravelの環境構築
 
-https://qiita.com/goemontech/items/63c8de2a122a4bdb7967
+[document 環境構築](https://laravel.com/docs/9.x/sail#installing-sail-into-existing-applications)
 
 ```bush
 プロジェクト立ち上げ
@@ -133,3 +133,7 @@ php artisan sail:install --devcontainer
 sailのバージョン確認
 sail php --version
 ```
+
+
+
+[document .env設定](https://laravel.com/docs/9.x#environment-based-configuration)
