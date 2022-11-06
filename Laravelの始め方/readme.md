@@ -137,5 +137,12 @@ sail php --version
 ```
 
 
+## 初期設定
+
+config/app.phpファイルの設定
+
+[参考資料](https://qiita.com/miriwo/items/16a982a36e7a62c4c86a)
+
+
 
 [document .env設定](https://laravel.com/docs/9.x#environment-based-configuration)
