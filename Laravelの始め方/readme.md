@@ -146,3 +146,66 @@ config/app.phpファイルの設定
 
 
 [document .env設定](https://laravel.com/docs/9.x#environment-based-configuration)
+
+
+## youtubeでの解説
+
+[youtube Link](https://www.youtube.com/watch?v=HHHN76dHrv0&list=PLf5KB8oI_L_3mXd4MoEw4DBwhmGiF5low&index=8)
+
+## gitからあらかじめ用意された何かをclone
+
+[clone してください](https://github.com/sho55/todo-app-laravel9)
+
+tree構造
+
+.
+├── docker-compose.yml
+└── docker-config
+    ├── mysql
+    │   ├── data
+    │   │   ├── #ib_16384_0.dblwr
+    │   │   ├── #innodb_temp
+    │   │   │   ├── temp_1.ibt
+    │   │   │   
+    │   │   ├── auto.cnf
+    │   │   ├── binlog.000001
+    │   │   ├
+    │   │   ├── mysql
+    │   │   │   ├── general_log.CSM
+    │   │   │   ├
+    │   │   ├── mysql.ibd
+    │   │   ├── performance_schema
+    │   │   │   ├── accounts_145.sdi
+    │   │   ├── private_key.pem
+    │   │   ├── sys
+    │   │   │   └── sys_config.ibd
+    │   │   ├── sys1
+    │   │   │   ├── failed_jobs.ibd
+    │   │   ├── undo_001
+    │   └── my.cnf
+    ├── nginx
+    │   ├── Dockerfile
+    │   └── default.conf
+    └── php
+        ├── Dockerfile
+        └── php.ini
+
+## dockerの起動
+
+```
+docker-compose up -d
+```
+
+これでコンテナとイメージが作られます
+
+```
+docker ps
+```
+
+これでドッカーのIDを見る
+
+webのところのIDをコピー
+
+```
+docker exec -it f30722cecbb8 bash
+```
