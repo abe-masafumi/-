@@ -209,3 +209,37 @@ webのところのIDをコピー
 ```
 docker exec -it f30722cecbb8 bash
 ```
+
+```
+composer create-project laravel/laravel:^9.0 src
+```
+
+これでsrcの中に何か作られる
+
+
+```
+exit
+```
+
+一回でる
+
+```
+docker-compose stop
+```
+
+一回すトップしてファイルを修正していく
+
+後で写真を入れ込む
+
+
+```
+docker-compose up -d
+
+```
+再度立ち上げ
+
+
+これにアクセス
+
+http://localhost:81/
+
