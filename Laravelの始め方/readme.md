@@ -243,3 +243,28 @@ docker-compose up -d
 
 http://localhost:81/
 
+
+
+```
+docker exec -it xxxxxxxxx bash
+```
+再度webコンテナ内に入る
+
+```
+php artisan make:migration create_posts_table --create=posts
+```
+
+マイグレーションファイルの生成
+
+
+## DBの接続設定を確認
+
+
+.envファイルを開く
+
+DB情報を編集
+
+```
+php artisan migrate:status
+```
+
