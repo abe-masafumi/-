@@ -265,6 +265,14 @@ php artisan make:migration create_posts_table --create=posts
 DB情報を編集
 
 ```
+php artisan config:clear
+```
+
+これはやらなくていいと思うけどキャッシュが消せるらしい
+
+
+
+```
 php artisan migrate:status
 ```
 
