@@ -4,6 +4,7 @@
 
 [アーチ状にカーブした文字を作る２つの方法](https://clip-blog.com/arched-text/)
 
-(文字や図形に影をつける)[https://clip-blog.com/dropshadow/]
+[文字や図形に影をつける](https://clip-blog.com/dropshadowshadow/)
 
-(線の端の角に丸みをつけたい )[https://www.ipentec.com/document/illustrator-round-corners-of-line-ends]
+[線の端の角に丸みをつけたい](https://www.ipentec.com/document/illustrator-round-corners-of-line-ends)
+
