@@ -82,3 +82,4 @@ flutter build apk --split-per-abi
 
 
 - リリース
+[サヤパスが詰んでた⇨アップロード キーストアを作成する](https://docs.flutter.dev/deployment/android#signing-the-app)
