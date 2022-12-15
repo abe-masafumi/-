@@ -41,12 +41,31 @@ App Distributionでアプリの配布
 IOS   "flutter build ios --release"
 IPAファイルをアップロードしてください。⇨IPAファイルを作成のためにios版でbuildしようとしたらエラー
 https://takamii.hatenablog.com/entry/2021/07/02/151453  
+
+なんかXcodeとアップルIDを取得しろと言われた(すでに持っているけど)
+https://prokids.jp/article/iphone_pre
+
+
 内容は先にappleで何か登録してください？って感じ？
-andoroid  "flutter build apk"
+
+
+
+andoroid  "flutter build apk"  
 複数のエラーが出ながらもBuildが実行完了した。
 ```
 Built build/app/outputs/flutter-apk/app-release.apk 
 ```
+
+Android App Bundleって方法が推奨されているらしい
+https://developer.android.com/platform/technology/app-bundle
+
+しかしApp Distributionでアプリを配布するにはAPKで出力する必要がある？
+https://developer.android.com/platform/technology/app-bundle
+
+apk
+flutter build apk --split-per-abi
+これでビルドしてできたファイルをApp Distributionに貼り付けた
+[project]/build/app/outputs/apk/release/app-armeabi-v7a-release.apk
 
 [apple Developer account](https://developer.apple.com/account/)
 
