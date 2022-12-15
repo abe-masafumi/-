@@ -81,5 +81,6 @@ flutter build apk --split-per-abi
 <img src="app_Distribution001.png" width="600px">
 
 
-- リリース
+- リリース  
+
 [サヤパスが詰んでた⇨アップロード キーストアを作成する](https://docs.flutter.dev/deployment/android#signing-the-app)
