@@ -37,8 +37,17 @@ https://firebase.google.com/docs/flutter/setup?authuser=0&hl=ja&platform=ios#ava
 
 - App Distributionでテストアプリの配布
 App Distributionでアプリの配布
+
+IOS   "flutter build ios --release"
 IPAファイルをアップロードしてください。⇨IPAファイルを作成のためにios版でbuildしようとしたらエラー
 https://takamii.hatenablog.com/entry/2021/07/02/151453  
 内容は先にappleで何か登録してください？って感じ？
+andoroid  "flutter build apk"
+複数のエラーが出ながらもBuildが実行完了した。
+```
+Built build/app/outputs/flutter-apk/app-release.apk 
+```
+
+[apple Developer account](https://developer.apple.com/account/)
 
 - リリース
