@@ -130,8 +130,9 @@ jobs:
         with:
           appId: ${{secrets.FIREBASE_APP_ID}}
           token: ${{secrets.FIREBASE_TOKEN}}
+          # App Distributionのテスト配布グループ名
           groups: test
-          
+          # ここは一度ローカルでbuildしてファイル名をコピペするのが確実
           file: build/app/outputs/apk/debug/app-armeabi-v7a-debug.apk
 ```
 
