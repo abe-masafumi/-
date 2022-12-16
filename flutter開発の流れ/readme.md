@@ -123,7 +123,7 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           artifacts: "build/app/outputs/apk/debug/*"
-          tag: v1.0.${{ github.run_rumber }}
+          tag: v1.0.${{ github.run_number }}
           token: ${{ secrets.TOKEN }}
       - name: upload artifact to Firebase App Distribution
         uses: wzieba/Firebase-Distribution-Github-Action@v1
@@ -131,6 +131,7 @@ jobs:
           appId: ${{secrets.FIREBASE_APP_ID}}
           token: ${{secrets.FIREBASE_TOKEN}}
           groups: test
+          
           file: build/app/outputs/apk/debug/app-armeabi-v7a-debug.apk
 ```
 
