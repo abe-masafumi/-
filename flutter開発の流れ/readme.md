@@ -61,7 +61,6 @@ flutter build ipa
 
 [apple Developer account](https://developer.apple.com/account/)
 
-
 **andoroid**  
 ```bush
 flutter build apk" 
@@ -80,7 +79,67 @@ flutter build apk --split-per-abi
 
 <img src="app_Distribution001.png" width="600px">
 
-
 - リリース  
 
 [サヤパスが詰んでた⇨アップロード キーストアを作成する](https://docs.flutter.dev/deployment/android#signing-the-app)
+
+- "github actions" と "App Distribution" を使ってアプリを自動配布
+
+[youtube](https://youtu.be/BAXvzkgL15o)
+
+[youtube](https://www.youtube.com/watch?v=9L7OfshBqX8)
+
+**projectにworkflowを作成**
+```yml
+on:
+  pull_request:
+    branches:
+      - master
+  push:
+    branches:
+      - master
+
+name: "Build & release"
+jobs:
+  build:
+    name: build & relese
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-java@v3
+        with:
+          java-version: '17.x'
+          # これがないとエラーになった
+          distribution: 'temurin'
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.0.5'
+      - run: flutter pub get 
+      # importのコードをクイックフィックスで修正
+      - run: flutter analyze
+      - run: flutter test
+      - run: flutter build apk --debug --split-per-abi
+      - name: Push to Releases
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "build/app/outputs/apk/debug/*"
+          tag: v1.0.${{ github.run_rumber }}
+          token: ${{ secrets.TOKEN }}
+      - name: upload artifact to Firebase App Distribution
+        uses: wzieba/Firebase-Distribution-Github-Action@v1
+        with:
+          appId: ${{secrets.FIREBASE_APP_ID}}
+          token: ${{secrets.FIREBASE_TOKEN}}
+          groups: test
+          file: build/app/outputs/apk/debug/app-armeabi-v7a-debug.apk
+```
+
+**secretsの作成**
+<!-- 自分のgithubアカウントのトークンを作成し、プロジェクトと紐付ける -->
+> secrets.TOKEN 
+<!-- firebaseのAndoroid用のIDを紐づける -->
+> secrets.FIREBASE_APP_ID
+<!-- firebaseのログイン時のトークンと紐づける -->
+> secrets.FIREBASE_TOKEN
+
+
