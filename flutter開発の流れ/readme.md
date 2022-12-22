@@ -69,6 +69,9 @@ flutter build ipa
 
 [参考資料](https://gakogako.com/flutter_android_release/#%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%83%93%E3%83%AB%E3%83%89%E3%82%92%E3%81%99%E3%82%8B)
 
+[エラー解決](https://m2.material.io/develop/android/docs/getting-started)
+[エラー解決](https://stackoverflow.com/questions/71798179/difference-between-com-google-android-materialmaterial1-6-0-and-implementati)
+
 ```bush
 flutter build apk" 
 ```
