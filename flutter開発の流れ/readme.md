@@ -40,6 +40,9 @@ Sumilator
 しかし"App Distribution"でアプリを配布するにはAPKで出力する必要がある？   
 
 **IOS**  
+
+[参考資料](https://enoiu.com/app-develop/flutter-ios-release/)
+
 ```bush
 flutter build ios --release
 ```
@@ -62,7 +65,10 @@ flutter build ipa
 
 [apple Developer account](https://developer.apple.com/account/)
 
-**andoroid**  
+**andoroid** 
+
+[参考資料](https://gakogako.com/flutter_android_release/#%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%83%93%E3%83%AB%E3%83%89%E3%82%92%E3%81%99%E3%82%8B)
+
 ```bush
 flutter build apk" 
 ```
