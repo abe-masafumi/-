@@ -12,9 +12,6 @@
 
 [sshファイルの権限](https://qiita.com/yuki82511988/items/0369808ad6cc226d936e)
 
-[Gitでリポジトリの履歴を初期化する方法](https://qumeru.com/magazine/526)
-
-
 
 エラー
 ```bush
