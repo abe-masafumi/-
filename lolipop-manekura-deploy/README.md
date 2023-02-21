@@ -12,7 +12,6 @@
 
 [sshファイルの権限](https://qiita.com/yuki82511988/items/0369808ad6cc226d936e)
 
-
 エラー
 ```bush
 Enumerating objects: 7, done.
